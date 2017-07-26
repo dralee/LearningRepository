@@ -1,0 +1,7 @@
+
+用于测试读取的文本文件：
+var fs = reqiure("fs")
+var data = fs.readFileSync("input.txt");
+console.log(data.toString());
+console.log("程序执行结束！");
+======================>

@@ -1,0 +1,16 @@
+
+task combineFileContentNonIncremental{
+	def sources = fileTree('sourceDir')
+	def destination = file('destination.txt')
+	
+	inputs.dir sources
+	outputs.file destination
+	
+	doLast {
+		destination.withPrintWriter { writer->
+			sources.each{source ->
+				writer.println source.text
+			}
+		}
+	}
+}

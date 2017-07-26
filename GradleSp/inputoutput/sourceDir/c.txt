@@ -1,0 +1,1 @@
+每个Task都拥有inputs和outputs属性，他们的类型分别为TaskInputs和TaskOutputs。在下面的例子中，我们展示了这么一种场景：名为combineFileContent的Task从sourceDir目录中读取所有的文件，然后将每个文件的内容合并到destination.txt文件中。让我们先来看看没有定义Task输入和输出的情况：

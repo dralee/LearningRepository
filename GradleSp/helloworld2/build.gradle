@@ -1,0 +1,6 @@
+
+task hello(type:jackie.HelloWorldTask)
+
+task hello1(type:jackie.HelloWorldTask){
+	message = "I am a programmer"
+}

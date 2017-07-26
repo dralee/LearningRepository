@@ -1,0 +1,30 @@
+
+// 输出包含root-project的名字
+allprojects{
+	apply plugin:'idea'
+	
+	task allTask << {
+		println project.name
+	}
+}
+
+// 输出不再包含root-project的名字
+subprojects{
+	task subTask << {
+		println project.name
+	}
+}
+
+// 输出名字以sub开头的project
+configure(allprojects.findAll{it.name.startsWith('sub')}){
+	task subTask2 << {
+		println project.name
+		println 'this is a sub project'
+	}
+}
+
+project(':sub-project1'){
+	task forProject1 << {
+		println 'for project 1'
+	}
+}

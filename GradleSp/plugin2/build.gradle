@@ -1,0 +1,7 @@
+
+apply plugin: jackie.DateAndTimePlugin
+
+dateAndTime {
+	timeFormat = 'HH:mm:ss.SSS'
+	dateFormat = 'MM/dd/yyyy'
+}

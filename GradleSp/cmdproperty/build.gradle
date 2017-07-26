@@ -1,0 +1,4 @@
+
+task showCommandLineProperties <<{
+	println property3
+}
