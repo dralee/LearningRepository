@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_ok">确定</string>
+    <string name="app_cancel">取消</string>
+    <string name="app_tip">提示</string>
+
+    <!-- applet -->
+
+    <!-- verify -->
+
+    <!-- format -->
+
+    <string name="app_name">SDKSample</string>
+	<string name="app_share">分享</string>
+    
+    <string name="enter">这是SDK_Sample的入口界面</string>
+    <string name="reg">将该app注册到微信</string>
+    <string name="goto_send">跳转到发消息界面</string>
+    <string name="goto_pay">跳转到支付界面</string>
+    <string name="goto_fav">跳转到收藏界面</string>
+    <string name="launch_wx">启动微信</string>
+    <string name="check_timeline_supported">检查是否支持发送到朋友圈</string>
+
+    <string name="pay_by_wx_title">通过微信支付</string>
+	
+	<string name="errcode_success">发送成功</string>
+	<string name="errcode_cancel">发送取消</string>
+	<string name="errcode_deny">发送被拒绝</string>
+	<string name="errcode_unknown">发送返回</string>
+	
+	<string name="launch_from_wx">Launch From Weixin</string>
+	
+    <!-- WXMediaMessage -->
+	<string name="input_openid">输入openid</string>
+	<string name="input_scope">输入scope</string>
+	
+	<string name="send">发送到微信</string>
+	<string name="receive">从微信接收</string>
+	
+	<string name="is_timeline">是否分享到朋友圈</string>
+	<string name="send_text">发送文本</string>
+	<string name="send_text_default">这段文字发送自微信SDK示例程序</string>
+	
+	<string name="send_img">发送图片</string>
+	<string-array name="send_img_item">
+        <item>发送图片的二进制数据</item>
+        <item>发送图片的本地路径</item>
+        <item>发送图片的URL</item>
+    </string-array>
+	<string name="send_img_file_not_exist">文件不存在</string>
+	
+	<string name="send_file">发送文件</string>
+	<string-array name="send_file_item">
+        <item>发送文件的二进制数据</item>
+        <item>发送文件的本地路径</item>
+    </string-array>
+
+    <string name="send_music">发送音乐</string>
+	<string-array name="send_music_item">
+	    <item>发送音乐url</item>
+	    <item>发送低带宽音乐url</item>
+	</string-array>
+
+	<string name="send_video">发送视频</string>
+	<string-array name="send_video_item">
+	    <item>发送视频url</item>
+	    <item>发送低带宽视频url</item>
+	</string-array>
+	
+	<string name="send_webpage">发送网页</string>
+	<string-array name="send_webpage_item">
+	    <item>发送网页url</item>
+	</string-array>
+
+	<string name="send_appdata">发送app消息</string>
+	<string-array name="send_appdata_item">
+	    <item>发送app文件本地路径</item>
+	    <item>发送app二进制数据</item>
+	    <item>发送无附件的app</item>
+	</string-array>
+	
+	<string name="send_emoji">发送表情消息</string>
+	<string-array name="send_emoji_item">
+	    <item>发送表情本地路径</item>
+	    <item>发送表情二进制数据</item>
+	</string-array>
+
+    <!-- GetFromWXActivity -->
+    <string name="share_text_to_weixin">回应文本到微信</string>
+    <string name="share_text_default">这段文字回应自微信SDK示例程序</string>
+    <string name="share_url_to_weixin">回应URL到微信</string>
+    <string name="share_pic_to_weixin">回应图片到微信</string>
+    <string name="share_music_to_weixin">回应音乐到微信</string>
+    <string name="share_video_to_weixin">回应视频到微信</string>
+    <string name="share_appdata_to_weixin">回应app消息到微信</string>
+
+    <string name="get_token_from_weixin">获取微信访问Token</string>
+    <string name="unregister_from_weixin">从微信反注册</string>
+    
+    <string name="show_from_wx_tip">这个界面用于显示微信向第三方app请求显示的信息</string>
+    
+	<!-- PayActivity -->
+    <string name="pay_by_wxap">服务器端签名微信支付</string>
+	<string name="check_pay">检查微信版本是否支持支付</string>
+
+    <!-- WXPayEntryActivity -->
+	<string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+	<string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+	    
+</resources>

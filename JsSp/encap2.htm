@@ -1,0 +1,67 @@
+<script type="text/javascript">
+    // 闭包实现封装
+    var Book = (function() {
+        // 静态私有变量
+        var num = 0;
+        // 静态私有方法
+        function check() {}
+        // 创建子类
+        function book(id, name, price) {
+            // 私有变量
+            var pnum = 1;
+            // 方法方法
+            function check() {};
+            // 特权方法
+            this.getName = function() {
+                return this.name;
+            };
+            this.setName = function(n) {
+                this.name = n;
+            }; //{return this.name;};
+            this.getPrice = function() {
+                return this.price;
+            }; //{return this.price;};
+            this.setPrice = function(p) {
+                this.price = p;
+            }; //{return this.price;};
+            // 公有属性
+            this.id = id;
+            // 公有方法
+            this.copy = function() {};
+            // 构造器
+            this.setName(name);
+            this.setPrice(price);
+
+            num++;
+            if (num > 10)
+                throw new Error('Out of the range the pulish.');
+        }
+        // 构造原型
+        var _book = new book(this.id, this.name, this.price);
+        _book.prototype = {
+            // 静态公有属性
+            // 静态公有方法
+            display: function() {
+                log(this.getName() + ":" + this.getPrice());
+            }
+        };
+        // 返回类
+        return _book;
+    })();
+
+
+
+    // 测试
+    var a = new Book(1, 'Advance programming by javascript', 68.5);
+    a.display();
+    log(a);
+    log(a.pnum); // undefined
+    log(a.id); // 1
+    log(a.undefineProp); // undefined
+    log(a.getName()); // dvance programming by javascript
+    log(a.getPrice()); // 68.5
+
+    function log(msg) {
+        console.log(msg);
+    }
+</script>

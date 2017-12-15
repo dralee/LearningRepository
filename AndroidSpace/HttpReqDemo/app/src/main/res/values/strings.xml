@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HttpReqDemo</string>
+    <string name="btnGet">GET</string>
+    <string name="btnPost">POST KEY VALUE</string>
+    <string name="btnPostXml">POST XML</string>
+    <string name="btnPostJson">POST JSON</string>
+    <string name="tvUrlTip">URL</string>
+    <string name="tvRequestHeaderTip">请求头</string>
+    <string name="tvRequestBodyTip">请求体</string>
+    <string name="tvResponseHeadTip">响应头</string>
+    <string name="tvResponseBodyTip">响应体</string>
+</resources>
